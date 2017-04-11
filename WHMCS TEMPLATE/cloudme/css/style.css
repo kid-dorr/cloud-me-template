@@ -1,0 +1,88 @@
+/* Global  ---------------------- */
+
+body {font-family: 'Lato', Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif; font-weight: normal; font-style: normal; font-size: 16px; line-height: 1.4; color: #5A5A5A; position: relative; -webkit-font-smoothing: antialiased; background: #fff; margin:0;}
+.spacing-30 {padding-bottom:30px;}
+.mainheader {width:100%; background:url(../images/header_bg.jpg) bottom center no-repeat; min-height:250px; position: relative; margin-bottom:45px}
+.mainheadertop {width:100%;background:#232e3f; background: rgba(35,46,63,.6); padding:0; height:80px}
+.logoandmenu {width:980px;margin:0 auto;}
+.logo  {float:left; width:260px; margin:16px 0 12px}
+.navigation {  padding: 0; float:right; width:700px}
+
+/* Navigation  ---------------------- */
+nav.desktop-menu {  padding: 0; float:right; text-align: left; }
+
+/*** Superfish Essential Styles ***/
+.sf-menu, .sf-menu * { overflow: visible; margin: 0; padding: 0; list-style: none; z-index: 1000; }
+.sf-menu { line-height: 1.0; float: left; margin-bottom: 0; }
+.sf-menu ul { z-index: 1000; position: absolute; top: -999em; padding: 0; overflow: visible !important; }
+.sf-menu ul li { display: block; width: 100% !important; text-align: left; padding:4px 0; border-bottom: 1px solid #40546a;margin-left:0!important; }
+.sf-menu ul li:last-child { border-bottom: 0; -webkit-border-bottom-right-radius: 5px;-webkit-border-bottom-left-radius: 5px;-moz-border-radius-bottomright: 5px;-moz-border-radius-bottomleft: 5px;border-bottom-right-radius: 5px;border-bottom-left-radius: 5px;}
+.sf-menu ul li a {  border:none;  -webkit-border-radius: 0!important;-moz-border-radius:  0!important;border-radius:  0!important;}
+.sf-menu ul li:hover, .sf-menu ul li a:hover { background: #40546a !important; }
+.sf-menu li { float: left; position: relative; text-decoration:none; text-align: center;padding:26px 0; margin-left:10px; }
+.sf-menu li:first-child { margin-left:0; }
+.sf-menu a {  display: block; position: relative; font-size:14px; letter-spacing:.07em; text-transform: uppercase; font-weight:400; padding:6px 15px 8px; color:#fff; } 
+.sf-menu > li > a {display: block; }
+.sf-menu li li a { font-size:11px; color:#fff; padding:7px 10px 5px; }
+.sf-menu li a:hover { background: #37485C; text-decoration: none; -webkit-transition:all .3s;-moz-transition:all .3s;-o-transition:all .3s;-ms-transition:all .3s;transition:all .3s; -webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;}
+.sf-menu li li a:hover { border-bottom:0; text-decoration: none}
+.sf-menu li.current-menu-item a, .sf-menu li.current-menu-parent a, .sf-menu li.current_page_parent a { background: #37485C; color:#fff; -webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;}
+.sf-menu li li.current-menu-item a, .sf-menu li.current-menu-parent li a, .sf-menu li.current-menu-item ul.sub-menu li a { background: #898a8d; color:#fff; }
+.sf-menu li li.current-menu-item a:hover, .sf-menu li.current-menu-parent li a:hover, .sf-menu li.current-menu-item ul.sub-menu li a:hover { background: #3ec7cf; color:#fff;}
+.sf-menu li:hover ul,.sf-menu li.sfHover ul { left: 0; top: 80px; z-index:999999;  width:175px;  -webkit-animation-duration: .3s;  -webkit-animation-timing-function: ease;  -webkit-animation-fill-mode: both;  -webkit-animation-name: fadeInRight;  -moz-animation-duration: .3s;  -moz-animation-timing-function: ease;  -moz-animation-fill-mode: both;  -moz-animation-name: fadeInRight;  animation-duration: .3s;  animation-timing-function: ease;  animation-fill-mode: both;  animation-name: fadeInRight;}
+ul.sf-menu li:hover li ul, ul.sf-menu li.sfHover li ul { top: -999em; }
+ul.sf-menu li li:hover ul, ul.sf-menu li li.sfHover ul { left: 175px; top: 0; -webkit-border-radius: 0!important;-moz-border-radius:  0!important;border-radius:  0!important; }
+ul.sf-menu li li:hover ul li:last-child, ul.sf-menu li li.sfHover ul li:last-child {-webkit-border-bottom-right-radius: 5px;-webkit-border-bottom-left-radius: 5px;-moz-border-radius-bottomright: 5px;-moz-border-radius-bottomleft: 5px;border-bottom-right-radius: 5px;border-bottom-left-radius: 5px;}
+ul.sf-menu li li:hover li ul, ul.sf-menu li li.sfHover li ul { top: -999em; }
+ul.sf-menu li li li:hover ul, ul.sf-menu li li li.sfHover ul { left: 175px; top: 0; -webkit-border-radius: 0!important;-moz-border-radius:  0!important;border-radius:  0!important;}
+.sf-menu li:hover { outline: 0; }
+.sf-menu li li a:hover { color:#fff !important; -webkit-transition:none !important;-moz-transition:none!important;-o-transition:none!important;-ms-transition:none!important;transition:none!important;}
+.sf-menu > li:hover { border:none !important; background: none !important; }
+.alt-nav { display:none; }
+.sf-menu ul {background:#37485C; -webkit-border-bottom-right-radius: 5px;-webkit-border-bottom-left-radius: 5px;-moz-border-radius-bottomright: 5px;-moz-border-radius-bottomleft: 5px;border-bottom-right-radius: 5px;border-bottom-left-radius: 5px; }
+.sf-menu ul:after {  bottom: 100%;  border: solid transparent;  content: " ";  height: 0;  width: 0;  position: absolute;  pointer-events: none;}
+.sf-menu ul:after {  border-color: rgba(127, 140, 141, 0);  border-bottom-color: #37485C;  border-width: 10px;  left: 17%;  margin-left: -10px;}
+.sf-menu ul li ul:after {  bottom: 100%;  border: transparent; }
+.sf-menu ul li ul:after {  border:0;}
+
+/* Footer ----------------------- */
+footer {padding:50px 0 15px;  background:#222D3A; margin-top:35px}
+.footercolumns {width:980px; padding:0;margin:0 auto; }
+footer .column {width:245px; float:left}
+.contacts {padding-bottom:30px; color:#fff; text-align: center; font-size:14px;font-weight: 300; }
+.contacts a {color:#fff;}
+.contacts a:hover {text-decoration: none; color: #C5645B;}
+.contacts i {display:block; font-size:33px; font-weight: 400; margin-bottom:12px;}
+.contacts .column {margin-bottom:40px}
+
+.footerlinks {padding:0;border-top:4px double #37485c;border-bottom:4px double #37485c; overflow:hidden; clear:both; }
+.footerlinks .border-right {border-right:1px solid #37485c;}
+.footerlinks .column {padding:20px 0 20px 50px; width:175px; }
+.footerlinks h2 {font-size:17px; color:#fff; padding:0; margin:0 0 20px; font-weight:900;}
+.footerlinks ul {padding:0; margin:0; list-style:none;}
+.footerlinks ul li {padding:4px 0; font-size:14px; color:#ccc;}
+.footerlinks ul li a {color:#ccc;}
+.footerlinks ul li a:hover {color:#C5645B; text-decoration: none}
+.footerlinks p {color:#ccc; font-size:14px;}
+.footerlinks hr { border: solid #494B4C; border-width: 7px 0 0; clear: both; margin: 11px 0; height: 0; }
+
+/* MailChip Newsletter Form Styling  ----------------------- */
+#mc-embedded-subscribe-form {padding:0!important; margin:0!important;}
+#mc-embedded-subscribe-form input.email {width:100%!important;}
+#mc-embedded-subscribe-form input.button {float: left; background: #37485C; margin-top:6px; color:#fff; font-size:12px; font-weight:900; padding:11px; text-transform: uppercase;  width: 100%!important; border-radius: 4px; border:0; cursor: pointer;  -ms-box-sizing: border-box;     -khtml-box-sizing: border-box;     -webkit-box-sizing: border-box;     -moz-box-sizing: border-box;    box-sizing: border-box;    box-sizing: border-box;}
+#mc-embedded-subscribe-form input.button:hover { background: #C5645B; }
+
+/* Social Links / Copyright Text  ----------------------- */
+.social {margin:12px 0 0; width:980px}
+.social ul {margin:0 1px;  padding:0;list-style: none}
+.social ul li {text-align: center; background:#2a3848; padding:6px 0; border-right:1px solid #222D3A; width:194px; display:inline; float:left}
+.social ul li:last-child {border-right:0;}
+.social ul li a {color:#fff;}
+.social ul li a:hover {text-decoration: none;}
+.social ul li.facebook:hover {background:#214379;}
+.social ul li.twitter:hover {background:#42A4D7;}
+.social ul li.googleplus:hover {background:#C65441;}
+.social ul li.linkedin:hover {background:#1A96D5;}
+.social ul li.pinterest:hover {background:#E4232F;}
+
+p.copyright {font-size:12px; text-align:center; padding:55px 0 0; margin:0; color:#ccc; text-transform: uppercase;}
